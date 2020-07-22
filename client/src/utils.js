@@ -3,7 +3,7 @@ import Wallet from "./contracts/Wallet.json";
 import Web3 from "web3";
 
 const getWeb3 = () => {
-	return new Web3("http://127.0.0.1:9545");
+	return new Web3("HTTP://127.0.0.1:7545");
 };
 
 const getWallet = async (web3) => {
