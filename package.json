@@ -1,0 +1,26 @@
+{
+  "name": "multi-signature-wallet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parv3213/course-Multi-Signature-Wallet.git"
+  },
+  "author": "Parv Garg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/parv3213/course-Multi-Signature-Wallet/issues"
+  },
+  "homepage": "https://github.com/parv3213/course-Multi-Signature-Wallet#readme",
+  "dependencies": {
+    "@openzeppelin/test-helpers": "^0.5.6",
+    "chai": "^4.2.0"
+  }
+}
