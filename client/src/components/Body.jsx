@@ -1,24 +1,20 @@
 import React from "react";
 import Approvers from "./Approvers";
 import Transfers from "./Transfers";
-import CreateTransaction from "./CreateTransaction";
-import Approve from "./Approve";
+import CreateTransfer from "./CreateTransfer";
 
-export default function Body({ approvers, quorum, transfers }) {
+export default function Body({ approvers, quorum, transfers, createTransfer, approveTransfer }) {
 	return (
 		<div className="mx-3 my-5">
 			<div className="row">
-				<div className="col-3">
+				<div className="col-lg-5 ">
 					<Approvers approvers={approvers} quorum={quorum} />
 				</div>
-				<div className="col-6">
-					<CreateTransaction />
-				</div>
-				<div className="col-3">
-					<Transfers transfers={transfers} />
+				<div className="col-lg-7">
+					<CreateTransfer createTransfer={createTransfer} />
 				</div>
 			</div>
-			<Approve />
+			<Transfers transfers={transfers} approveTransfer={approveTransfer} />
 		</div>
 	);
 }
